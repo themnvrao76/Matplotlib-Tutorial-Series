@@ -1,0 +1,12 @@
+from matplotlib import pyplot as plt
+import pandas as pd
+
+data=pd.read_csv("covid.csv")
+Country=data["Country"]
+total=data["Total Cases"]
+
+plt.barh(Country,total,color="Purple")
+plt.title("Covid 19")
+plt.ylabel("Country")
+plt.xlabel("Total Cases")
+plt.show()
