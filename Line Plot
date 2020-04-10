@@ -1,0 +1,17 @@
+from matplotlib import pyplot as plt
+
+#Canada Capita
+year=[2010,2011,2012,2013,2014,2015,2016]
+capita=[32755,38420,42334,42665,42676,41039,35175]
+
+#China Capita
+year1=[2010,2011,2012,2013,2014,2015,2016]
+capita1=[29700,31500,38420,42665,42334,38420,41039]
+
+plt.plot(year,capita,marker=".",linewidth=5,linestyle="--",color="Black",label="Canada")
+plt.plot(year1,capita1,marker=".",linewidth=5,linestyle="--",color="Red",label="China")
+plt.title("Capita")
+plt.xlabel("Year")
+plt.ylabel("Capita")
+plt.legend()
+plt.show()
